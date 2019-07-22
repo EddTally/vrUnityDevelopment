@@ -278,6 +278,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>E:/EDD/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -295,9 +298,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>E:/EDD/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -483,6 +483,48 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Shared Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Let&apos;s Try Shooter Content\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\SteamVR\Editor\SteamVR_Editor.asmdef" />
     <None Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Editor.asmdef" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
