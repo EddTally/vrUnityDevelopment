@@ -22,8 +22,8 @@ public class WorldSpaceVideo : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        //videoPlayer.targetTexture.Release(); //Clears the last frame of video just played.
         SetTotalTimeUI();
+        //videoPlayer.targetTexture.Release(); //Clears the last frame of video just played.
     }
 	
 	// Update is called once per frame
@@ -43,7 +43,6 @@ public class WorldSpaceVideo : MonoBehaviour {
         } else
         {
             videoPlayer.Play();
-            SetTotalTimeUI();
             playButtonRenderer.material = pauseButtonMaterial;
         }
     }

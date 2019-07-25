@@ -206,7 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 357525323}
   - component: {fileID: 357525324}
-  - component: {fileID: 357525326}
+  - component: {fileID: 357525325}
   m_Layer: 0
   m_Name: LeftVideo
   m_TagString: Untagged
@@ -257,10 +257,10 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
---- !u!114 &357525326
+--- !u!114 &357525325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -268,17 +268,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 357525322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 475a84061aa5682499436af5df44ab2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 22d0530886699a34d9fb448345f15266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButtonMaterial: {fileID: 0}
-  pauseButtonMaterial: {fileID: 0}
-  playButtonRenderer: {fileID: 0}
-  currentMinutes: {fileID: 0}
-  currentSeconds: {fileID: 0}
-  totalMinutes: {fileID: 0}
-  totalSeconds: {fileID: 0}
-  playHeadMover: {fileID: 0}
+  playButtonMaterial: {fileID: 2100000, guid: 039a466d284e46f49a421f80d9ed7905, type: 2}
+  pauseButtonMaterial: {fileID: 2100000, guid: ec5370ddfd485d740a303b2799006015, type: 2}
+  playButtonRenderer: {fileID: 1745466132}
 --- !u!1 &462393739
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,8 +596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldSpaceVideo: {fileID: 942390034}
-  worldSpaceVideo1: {fileID: 357525326}
-  worldSpaceVideo2: {fileID: 1563366063}
+  worldSpaceVideo1: {fileID: 0}
+  worldSpaceVideo2: {fileID: 0}
 --- !u!23 &709375712
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -962,7 +957,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!82 &942390033
@@ -1319,7 +1314,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!114 &1563366063
@@ -1330,17 +1325,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1563366060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 475a84061aa5682499436af5df44ab2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 22d0530886699a34d9fb448345f15266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButtonMaterial: {fileID: 0}
-  pauseButtonMaterial: {fileID: 0}
-  playButtonRenderer: {fileID: 0}
-  currentMinutes: {fileID: 0}
-  currentSeconds: {fileID: 0}
-  totalMinutes: {fileID: 0}
-  totalSeconds: {fileID: 0}
-  playHeadMover: {fileID: 0}
+  playButtonMaterial: {fileID: 2100000, guid: 039a466d284e46f49a421f80d9ed7905, type: 2}
+  pauseButtonMaterial: {fileID: 2100000, guid: ec5370ddfd485d740a303b2799006015, type: 2}
+  playButtonRenderer: {fileID: 1745466132}
 --- !u!1 &1577811183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,8 +1675,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldSpaceVideo: {fileID: 942390034}
-  worldSpaceVideo1: {fileID: 357525326}
-  worldSpaceVideo2: {fileID: 1563366063}
+  leftScreenSpaceVideo: {fileID: 357525325}
+  rightScreenSpaceVideo: {fileID: 1563366063}
 --- !u!1 &1925333739
 GameObject:
   m_ObjectHideFlags: 0

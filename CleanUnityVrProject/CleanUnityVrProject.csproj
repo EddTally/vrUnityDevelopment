@@ -251,9 +251,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\FastForward15s.cs" />
-    <Compile Include="Assets\Scripts\LeftWorldSpaceVideo.cs" />
     <Compile Include="Assets\Scripts\PlayButtonControl.cs" />
     <Compile Include="Assets\Scripts\PlayHeadMover.cs" />
+    <Compile Include="Assets\Scripts\ScreenSpaceVideo.cs" />
     <Compile Include="Assets\Scripts\Utils\CameraEditorControl.cs" />
     <Compile Include="Assets\Scripts\Utils\VRInput.cs" />
     <Compile Include="Assets\Scripts\Utils\VRInteractiveItem.cs" />

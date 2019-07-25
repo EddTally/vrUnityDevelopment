@@ -10,6 +10,5 @@ public class FastForward15s : MonoBehaviour {
         worldSpaceVideo.Skip15Seconds();
         worldSpaceVideo1.Skip15Seconds();
         worldSpaceVideo2.Skip15Seconds();
-        //leftWorldSpaceVideo.PlayPause();
     }
 }
