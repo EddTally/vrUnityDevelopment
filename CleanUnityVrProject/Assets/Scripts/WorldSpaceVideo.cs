@@ -47,9 +47,10 @@ public class WorldSpaceVideo : MonoBehaviour {
         }
     }
 
-    public void Skip15Seconds()
+    public void Forward15Seconds()
     {
         videoPlayer.time = videoPlayer.time + 15;
+
     }
 
 

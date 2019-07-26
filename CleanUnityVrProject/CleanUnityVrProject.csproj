@@ -250,7 +250,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DragObject.cs" />
     <Compile Include="Assets\Scripts\FastForward15s.cs" />
+    <Compile Include="Assets\Scripts\NotInUseRaycastDragObject.cs" />
     <Compile Include="Assets\Scripts\PlayButtonControl.cs" />
     <Compile Include="Assets\Scripts\PlayHeadMover.cs" />
     <Compile Include="Assets\Scripts\ScreenSpaceVideo.cs" />
