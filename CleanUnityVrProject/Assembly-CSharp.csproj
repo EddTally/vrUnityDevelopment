@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\VideoSystem\HideMenu.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\PlayButtonControl.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\PlayHeadMover.cs" />
+    <Compile Include="Assets\Scripts\VideoSystem\PlayPauseController.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\ScreenSpaceVideo.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\WorldSpaceVideo.cs" />
     <Compile Include="Assets\Scripts\VR\ActionsTest.cs" />
