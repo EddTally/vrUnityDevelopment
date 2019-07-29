@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8012cfa04ba3d64896ec2bd7f6ccbab, type: 3}
+  m_Name: SteamVR_Input_ActionSet_default_In
+  m_EditorClassIdentifier: 
+  actionSet: {fileID: 0}
+  listDirection: 0
+  actions:
+  - {fileID: 11400000, guid: 79120fdb22c0bef4a8243bb82b6295e6, type: 2}
+  - {fileID: 11400000, guid: d97a128ab0bbb3746a0b0e17d0e531f7, type: 2}
+  - {fileID: 11400000, guid: 8d6cdc0533ea3a74e9d2297a81b98c3b, type: 2}
+  - {fileID: 11400000, guid: c0e538af612458e4fa2e52bc75c0ded5, type: 2}
+  - {fileID: 11400000, guid: 668089e66285cd647a23bcc267f98573, type: 2}
+  Grab: {fileID: 11400000, guid: 79120fdb22c0bef4a8243bb82b6295e6, type: 2}
+  Pose: {fileID: 11400000, guid: d97a128ab0bbb3746a0b0e17d0e531f7, type: 2}
+  SkeletonLeftHand: {fileID: 11400000, guid: 8d6cdc0533ea3a74e9d2297a81b98c3b, type: 2}
+  SkeletonRightHand: {fileID: 11400000, guid: c0e538af612458e4fa2e52bc75c0ded5, type: 2}
+  HeadsetOnHead: {fileID: 11400000, guid: 668089e66285cd647a23bcc267f98573, type: 2}
