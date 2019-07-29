@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 121
+  controlID: 82
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 31
+  controlID: 69
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 13
+  controlID: 51
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -381,7 +381,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d4fbffff861400001e150000
+      m_ExpandedIDs: de86ffff1a97ffff1ab6ffff56c6ffffd4fbffff84140000b81400001e1500004694000078940000dc940000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -477,12 +477,13 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts/VideoSystem
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: E:\EDD\Documents\University\Masters\vrproject\CleanUnityVrProject
+  m_LastProjectPath: E:\EDD\Documents\University\Masters\mscProject\CleanUnityVrProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -517,7 +518,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000bc0b0000f60b0000900c0000ca0c00003e0d0000580d0000840e0000ec0e0000520f00008c100000aa10000084110000dc110000561200008c120000c612000058320000
+    m_ExpandedIDs: ffffffff00000000bc0b0000140c0000900c0000ca0c00003e0d0000580d0000840e0000ec0e0000520f00008c100000aa10000084110000dc11000056120000c612000058320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -717,9 +718,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.1331915, y: 0.057050552, z: -0.007680102, w: -0.9894172}
   m_Size:
-    m_Target: 3.501029
+    m_Target: 15.019931
     speed: 2
-    m_Value: 3.501029
+    m_Value: 15.019931
   m_Ortho:
     m_Target: 0
     speed: 2

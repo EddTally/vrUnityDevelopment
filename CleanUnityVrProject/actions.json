@@ -24,6 +24,10 @@
       "requirement": "optional"
     },
     {
+      "name": "/actions/default/in/GrabPinch",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
