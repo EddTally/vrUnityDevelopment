@@ -24,7 +24,8 @@ MonoBehaviour:
   - __actions_default_in_SkeletonLeftHand
   - __actions_default_in_SkeletonRightHand
   - __actions_default_in_HeadsetOnHead
-  - __actions_default_in_GrabPinch
+  - __actions_default_in_Click
+  - __actions_default_in_MenuHider
   - __actions_default_out_Haptic
   - __actions_mixedreality_in_ExternalCamera
   actionObjects:
@@ -33,6 +34,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8d6cdc0533ea3a74e9d2297a81b98c3b, type: 2}
   - {fileID: 11400000, guid: c0e538af612458e4fa2e52bc75c0ded5, type: 2}
   - {fileID: 11400000, guid: 668089e66285cd647a23bcc267f98573, type: 2}
-  - {fileID: 11400000, guid: c42462bb3a49d694d8d0478c2805aba5, type: 2}
+  - {fileID: 11400000, guid: bda71cf7f072cd64f938a6acbefaa030, type: 2}
+  - {fileID: 11400000, guid: 58326442552cc4c45804122f9cf5ca0f, type: 2}
   - {fileID: 11400000, guid: 744e8cca0be8b9b4c91a45f7135ec6b9, type: 2}
   - {fileID: 11400000, guid: eb13610a2d994ba4e871322690ce013a, type: 2}

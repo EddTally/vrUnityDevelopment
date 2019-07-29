@@ -24,7 +24,11 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/GrabPinch",
+      "name": "/actions/default/in/Click",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/MenuHider",
       "type": "boolean"
     },
     {
