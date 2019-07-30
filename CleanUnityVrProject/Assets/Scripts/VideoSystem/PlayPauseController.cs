@@ -11,7 +11,17 @@ public class PlayPauseController : MonoBehaviour
     public SteamVR_Input_Sources handType;
     public SteamVR_Action_Boolean triggerAction;
 
-    private void Update()
+    void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.name == "Controller (left)" || col.gameObject.name == "Controller (right)")
+        {
+            worldSpaceVideo.PlayPause();
+            leftScreenSpaceVideo.PlayPause();
+            rightScreenSpaceVideo.PlayPause();
+        }
+    }
+
+    void Update()
     {
         if (triggerAction.GetState(handType))
         {
@@ -19,5 +29,14 @@ public class PlayPauseController : MonoBehaviour
             leftScreenSpaceVideo.PlayPause();
             rightScreenSpaceVideo.PlayPause();
         }
+    }
+
+    void OnMouseDown()
+    {
+        worldSpaceVideo.PlayPause();
+        leftScreenSpaceVideo.PlayPause();
+        rightScreenSpaceVideo.PlayPause();
+        //worldSpaceVideo1.PlayPause();
+        //worldSpaceVideo2.PlayPause();
     }
 }

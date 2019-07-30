@@ -34,9 +34,9 @@ using Valve.VR;
 public class LaserPointer : MonoBehaviour
 {
 
-    public SteamVR_Input_Sources handType;
+   // public SteamVR_Input_Sources handType;
     public SteamVR_Behaviour_Pose controllerPose;
-    public SteamVR_Action_Boolean triggerAction;
+   // public SteamVR_Action_Boolean triggerAction;
 
 
     public GameObject laserPrefab; // The laser prefab
@@ -57,17 +57,17 @@ public class LaserPointer : MonoBehaviour
     void Update()
     {
         // 1
-        if (triggerAction.GetState(handType))
-        {
+       // if (triggerAction.GetState(handType))
+       // {
             RaycastHit hit;
 
             // 2
-            if (Physics.Raycast(controllerPose.transform.position, transform.forward, out hit, 100, playPauseMask))
+            if (Physics.Raycast(controllerPose.transform.position, transform.forward, out hit, 100/*, playPauseMask*/))
             {
                 hitPoint = hit.point;
                 ShowLaser(hit);
             }
-        }
+       // }
         else // 3
         {
             laser.SetActive(false);
@@ -81,6 +81,11 @@ public class LaserPointer : MonoBehaviour
         laserTransform.LookAt(hitPoint); // Rotate laser facing the hit point
         laserTransform.localScale = new Vector3(laserTransform.localScale.x, laserTransform.localScale.y,
             hit.distance); // Scale laser so it fits exactly between the controller & the hit point
+    }
+
+    public Vector3 GetHitpoint()
+    {
+        return hitPoint;
     }
 
 }
