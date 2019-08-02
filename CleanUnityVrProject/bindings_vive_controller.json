@@ -227,7 +227,7 @@
    "category" : "steamvr_input",
    "controller_type" : "vive_controller",
    "description" : "Msc VR Project Vive Controller Bindings",
-   "name" : "EddTallentire Bindings",
+   "name" : "EddTallentire Msc Project Bindings",
    "options" : {
       "mirror_actions" : false,
       "simulated_controller_type" : "none"

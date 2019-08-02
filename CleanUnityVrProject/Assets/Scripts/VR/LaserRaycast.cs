@@ -45,9 +45,6 @@ public class LaserRaycast : MonoBehaviour
     private Vector3 hitPoint; // Point where the raycast hits
     private Collider colliderHit = null; // The collider that the raycast hit
 
-    public LayerMask playPauseMask;
-    private bool shouldPlayPause;
-
     //new
     void Start()
     {
@@ -59,10 +56,9 @@ public class LaserRaycast : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(controllerPose.transform.position, transform.forward, out hit, 100/*, playPauseMask*/))
+        if (Physics.Raycast(controllerPose.transform.position, transform.forward, out hit, 200/*, playPauseMask*/))
         {
             colliderHit = hit.collider;
-            //Debug.Log(hit.collider.name);
             hitPoint = hit.point;
             ShowLaser(hit);
         }
@@ -88,10 +84,6 @@ public class LaserRaycast : MonoBehaviour
 
     public Collider GetColliderHit()
     {
-        if (colliderHit == null)
-        {
-            Debug.Log("Raycast has not impacted any collider");
-        }
         return colliderHit;
     }
 

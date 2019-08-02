@@ -40,7 +40,7 @@ public class ControllerGrabObject : MonoBehaviour
     private GameObject collidingObject;
     private GameObject objectInHand;
 
-    public void OnTriggerEnter(Collider other)
+    /*public void OnTriggerEnter(Collider other)
     {
         SetCollidingObject(other);
     }
@@ -48,7 +48,7 @@ public class ControllerGrabObject : MonoBehaviour
     public void OnTriggerStay(Collider other)
     {
         SetCollidingObject(other);
-    }
+    }*/
 
     public void OnTriggerExit(Collider other)
     {

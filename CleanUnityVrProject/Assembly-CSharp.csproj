@@ -72,7 +72,6 @@
     <Compile Include="Assets\Scripts\VideoSystem\ScreenSpaceVideo.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\UIController.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\WorldSpaceVideo.cs" />
-    <Compile Include="Assets\Scripts\VR\ActionsTest.cs" />
     <Compile Include="Assets\Scripts\VR\ControllerGrabObject.cs" />
     <Compile Include="Assets\Scripts\VR\LaserRaycast.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
