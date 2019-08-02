@@ -24,7 +24,7 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/Click",
+      "name": "/actions/default/in/TriggerClick",
       "type": "boolean"
     },
     {

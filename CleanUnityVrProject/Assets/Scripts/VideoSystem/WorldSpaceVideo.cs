@@ -6,12 +6,8 @@ using UnityEngine.UI;
 
 public class WorldSpaceVideo : MonoBehaviour {
 
-    public Material playButtonMaterial;
-    public Material pauseButtonMaterial;
-    public Renderer playButtonRenderer;
     public Text currentMinutes, currentSeconds, totalMinutes, totalSeconds;
     public PlayHeadMover playHeadMover;
-
     private VideoPlayer videoPlayer;
 
 
@@ -35,25 +31,7 @@ public class WorldSpaceVideo : MonoBehaviour {
         }
 	}
 
-    public void PlayPause()
-    {
-        if (videoPlayer.isPlaying){
-            videoPlayer.Pause();
-            playButtonRenderer.material = playButtonMaterial;
-        } else
-        {
-            videoPlayer.Play();
-            playButtonRenderer.material = pauseButtonMaterial;
-        }
-    }
-
-    public void Forward15Seconds()
-    {
-        videoPlayer.time = videoPlayer.time + 15;
-
-    }
-
-
+    
     void SetCurrentTimeUI()
     {
         string minutes = Mathf.Floor((int)videoPlayer.time / 60).ToString("00");
@@ -76,6 +54,11 @@ public class WorldSpaceVideo : MonoBehaviour {
     {
         double fraction = (double)videoPlayer.frame / (double)videoPlayer.clip.frameCount;
         return fraction;
+    }
+
+    public VideoPlayer GetVideoPlayer()
+    {
+        return videoPlayer;
     }
 
 }

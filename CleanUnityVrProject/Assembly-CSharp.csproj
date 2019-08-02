@@ -60,23 +60,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\RaycastInput.cs" />
     <Compile Include="Assets\Scripts\Utils\CameraEditorControl.cs" />
     <Compile Include="Assets\Scripts\Utils\VRInput.cs" />
     <Compile Include="Assets\Scripts\Utils\VRInteractiveItem.cs" />
     <Compile Include="Assets\Scripts\Utils\VRTrackingReset.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\DragObject.cs" />
-    <Compile Include="Assets\Scripts\VideoSystem\FastForward15s.cs" />
-    <Compile Include="Assets\Scripts\VideoSystem\HideMenu.cs" />
-    <Compile Include="Assets\Scripts\VideoSystem\PlayButtonControl.cs" />
+    <Compile Include="Assets\Scripts\VideoSystem\FastForwardScript.cs" />
+    <Compile Include="Assets\Scripts\VideoSystem\HideMenuScript.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\PlayHeadMover.cs" />
-    <Compile Include="Assets\Scripts\VideoSystem\PlayPauseController.cs" />
+    <Compile Include="Assets\Scripts\VideoSystem\PlayPauseScript.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\ScreenSpaceVideo.cs" />
-    <Compile Include="Assets\Scripts\VideoSystem\VideoController.cs" />
+    <Compile Include="Assets\Scripts\VideoSystem\UIController.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\WorldSpaceVideo.cs" />
     <Compile Include="Assets\Scripts\VR\ActionsTest.cs" />
     <Compile Include="Assets\Scripts\VR\ControllerGrabObject.cs" />
-    <Compile Include="Assets\Scripts\VR\LaserPointer.cs" />
+    <Compile Include="Assets\Scripts\VR\LaserRaycast.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestTrackedCamera.cs" />

@@ -7,9 +7,6 @@ using UnityEngine.UI;
 public class ScreenSpaceVideo : MonoBehaviour
 {
 
-    public Material playButtonMaterial;
-    public Material pauseButtonMaterial;
-    public Renderer playButtonRenderer;
     private VideoPlayer videoPlayer;
 
 
@@ -18,24 +15,9 @@ public class ScreenSpaceVideo : MonoBehaviour
         videoPlayer = GetComponent<VideoPlayer>();
     }
 
-    public void PlayPause()
+    public VideoPlayer GetVideoPlayer()
     {
-        if (videoPlayer.isPlaying)
-        {
-            videoPlayer.Pause();
-            playButtonRenderer.material = playButtonMaterial;
-        }
-        else
-        {
-            videoPlayer.Play();
-            playButtonRenderer.material = pauseButtonMaterial;
-        }
-    }
-
-    public void Forward15Seconds()
-    {
-        videoPlayer.time = videoPlayer.time + 15;
-
+        return videoPlayer;
     }
 
 }

@@ -27,7 +27,7 @@ namespace Valve.VR
         
         public Valve.VR.SteamVR_Action_Boolean HeadsetOnHead;
         
-        public Valve.VR.SteamVR_Action_Boolean Click;
+        public Valve.VR.SteamVR_Action_Boolean TriggerClick;
         
         public Valve.VR.SteamVR_Action_Boolean MenuHider;
     }

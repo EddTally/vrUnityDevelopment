@@ -60,7 +60,7 @@ public class ControllerGrabObject : MonoBehaviour
         collidingObject = null;
     }
 
-    private void SetCollidingObject(Collider col)
+    public void SetCollidingObject(Collider col)
     {
         if (collidingObject || !col.GetComponent<Rigidbody>())
         {
