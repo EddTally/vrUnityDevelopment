@@ -86,6 +86,10 @@ public class LaserRaycast : MonoBehaviour
     {
         return colliderHit;
     }
+    public void SetColliderHit(Collider col)
+    {
+        colliderHit = col;
+    }
 
     public void disableLaser()
     {

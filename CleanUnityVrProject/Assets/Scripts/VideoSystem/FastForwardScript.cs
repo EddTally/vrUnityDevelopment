@@ -14,11 +14,4 @@ public class FastForwardScript : MonoBehaviour {
         leftScreenSpaceVideo.GetVideoPlayer().time += 15;
         rightScreenSpaceVideo.GetVideoPlayer().time += 15;
     }
-
-    void OnMouseDown()
-    {
-        worldSpaceVideo.GetVideoPlayer().time += 15;
-        leftScreenSpaceVideo.GetVideoPlayer().time += 15;
-        rightScreenSpaceVideo.GetVideoPlayer().time += 15;
-    }
 }
