@@ -9,45 +9,48 @@ public class UIController : MonoBehaviour
     public SteamVR_Action_Boolean triggerAction;
     public SteamVR_Action_Boolean grabAction;
     public SteamVR_Action_Boolean menuHiderAction;
-    
-    public LaserRaycast raycastLaser;
-    public ControllerGrabObject grabObject;
-    public HideMenuScript menu;
-    public PlayPauseScript playBtn;
-    public FastForwardScript ff;
-    public Collider leftVideoCube, rightVideoCube;
+
+    public GameObject videoUI;
+    public Collider leftVideoCube, rightVideoCube, playCol, ffCol;
 
     private Collider col = null;
 
     // Update is called once per frame
     void Update()
     {
-        col = raycastLaser.GetColliderHit();
-        //Debug.Log(col.gameObject.name);
-       // if (col != null) //Don't have to go through the whole loop if its null, saves time
-       // {
+        col = this.GetComponent<LaserRaycast>().GetColliderHit();
+        if (col != null) //Don't have to go through the whole loop if its null, saves time
+        {
+            Debug.Log(col.gameObject.name);
             //If grabAction from SteamVR and Raycast Collider hits left or right screen, set col obj as col
             if (grabAction.GetState(handType) && (col == leftVideoCube || col == rightVideoCube))
             {
-                grabObject.SetCollidingObject(col);
+                this.GetComponent<ControllerGrabObject>().SetCollidingObject(col);
+                this.GetComponent<ControllerGrabObject>().GrabObjectMain();
             }
+            else
+            {
+                this.GetComponent<ControllerGrabObject>().ReleaseObject();
+            }
+
             //If triggerAction from SteamVR and Raycast Collider hits fastforwrad gameobject, fastforward
-            else if (triggerAction.GetState(handType) && col.gameObject == ff.gameObject)
+            if (triggerAction.GetState(handType) && col == ffCol)
             {
-                ff.ff15s();
+                ffCol.GetComponent<FastForwardScript>().ff15s();
             }
+
             //If triggerAction from SteamVR and Raycast Collider hits PlayPause gameobject, Pause/Play
-            else if (triggerAction.GetState(handType) && col.gameObject.name == "PlayButton")//col.gameObject == playBtn.gameObject)
+            if (triggerAction.GetState(handType) && col == playCol)//col.gameObject == playBtn.gameObject)
             {
-                playBtn.PlayPause();
+                playCol.GetComponent<PlayPauseScript>().PlayPause();
             }
+
             //If menuHiderAction from SteamVR is pressed, hide menu and raycasts until another gameobj is hit
-            else if (menuHiderAction.GetState(handType))
+            if (menuHiderAction.GetState(handType))
             {
-                menu.HideMenu();
-                raycastLaser.disableLaser();
+                videoUI.gameObject.GetComponent<HideMenuScript>().HideMenu();
             }
-        //}
+        }
 
     }
 }

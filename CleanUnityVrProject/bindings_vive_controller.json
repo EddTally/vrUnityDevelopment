@@ -121,7 +121,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grab"
+                     "output" : "/actions/default/in/triggerclick"
                   }
                },
                "mode" : "button",
@@ -130,7 +130,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grab"
+                     "output" : "/actions/default/in/triggerclick"
                   }
                },
                "mode" : "button",

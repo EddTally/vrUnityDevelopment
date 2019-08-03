@@ -70,7 +70,7 @@ public class ControllerGrabObject : MonoBehaviour
         collidingObject = col.gameObject;
     }
 
-    void Update()
+    public void GrabObjectMain()
     {
         if (grabAction.GetLastStateDown(handType))
         {
@@ -105,7 +105,7 @@ public class ControllerGrabObject : MonoBehaviour
         return fx;
     }
 
-    private void ReleaseObject()
+    public void ReleaseObject()
     {
         if (GetComponent<FixedJoint>())
         {
