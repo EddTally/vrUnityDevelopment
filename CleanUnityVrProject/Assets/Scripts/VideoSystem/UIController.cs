@@ -12,7 +12,7 @@ public class UIController : MonoBehaviour
 
     public LaserRaycast laserRaycast;
     public GameObject videoUI;
-    public Collider leftVideoCube, rightVideoCube, playCol, ffCol;
+    public Collider leftVideoCube, rightVideoCube, playCol, ffCol, ffMenu;
 
     //Variables for Delays
     int count = 0;
@@ -42,7 +42,7 @@ public class UIController : MonoBehaviour
                     laserRaycast.moveObject(col);
                 }
 
-                //If triggerAction from SteamVR and Raycast Collider hits fastforwrad gameobject, fastforward
+                //If triggerAction from SteamVR and Raycast Collider hits fastforward collider, fastforward
                 if (triggerAction.GetState(handType) && col == ffCol)
                 {
                     ffCol.GetComponent<FastForwardScript>().ff15s();
@@ -51,7 +51,7 @@ public class UIController : MonoBehaviour
                     count = 200;
                 }
 
-                //If triggerAction from SteamVR and Raycast Collider hits PlayPause gameobject, Pause/Play
+                //If triggerAction from SteamVR and Raycast Collider hits PlayPause collider, Pause/Play
                 if (triggerAction.GetState(handType) && col == playCol)
                 {
                     playCol.GetComponent<PlayPauseScript>().PlayPause();
@@ -59,6 +59,15 @@ public class UIController : MonoBehaviour
 
                     count = 200;
                 }
+
+                //If triggerAction from SteamVR and Raycast Collider hits FFmenu collider, show ff15s, ff30s & ff1m gameobjects
+                if(triggerAction.GetState(handType) && col == ffMenu)
+                {
+                    videoUI.gameObject.GetComponent<FFmenuScript>().ShowMenu();
+
+                    count = 200;
+                }
+
                 //Refreshing raycast collider so when raycast is no longer over an object it is null, this is important
                 // as it stops functions from being activated when they aren't being pointed to.
                 this.GetComponent<LaserRaycast>().SetColliderHit(null);
