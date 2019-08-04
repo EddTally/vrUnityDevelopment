@@ -36,21 +36,10 @@ public class UIController : MonoBehaviour
             col = this.GetComponent<LaserRaycast>().GetColliderHit();
             if (col != null) //Don't have to go through the whole loop if its null, saves time
             {
-                //If grabAction from SteamVR and Raycast Collider hits left or right screen, set col obj as col
-                /* if (grabAction.GetState(handType) && (col == leftVideoCube || col == rightVideoCube))
-                 {
-                     this.GetComponent<ControllerGrabObject>().SetCollidingObject(col);
-                     //Debug.Log(this.GetComponent<ControllerGrabObject>().getCollidingObject());
-                     this.GetComponent<ControllerGrabObject>().GrabObject();
-                 }*/
+                //If grabAction from SteamVR and Raycast Collider hits left or right screen, move object.
                 if (grabAction.GetState(handType) && (col == leftVideoCube || col == rightVideoCube))
                 {
-                    Vector3 mOffset;
-                    mOffset = col.gameObject.transform.position - laserRaycast.GetHitpoint();
-                    col.gameObject.transform.position = laserRaycast.GetHitpoint() + mOffset;
-                   // col.gameObject.transform.Translate(laserRaycast.GetHitpoint() + mOffset);
-                    Debug.Log(mOffset);
-                    //this.GetComponent<DragObjectAttempt1>().DragObject(col.gameObject);
+                    laserRaycast.moveObject(col);
                 }
 
                 //If triggerAction from SteamVR and Raycast Collider hits fastforwrad gameobject, fastforward

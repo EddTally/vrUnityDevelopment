@@ -95,4 +95,10 @@ public class LaserRaycast : MonoBehaviour
     {
         laser.SetActive(false);
     }
+
+    //Add more functionality too, such as rotation
+    public void moveObject(Collider col)
+    {
+        col.gameObject.transform.position = hitPoint;
+    }
 }
