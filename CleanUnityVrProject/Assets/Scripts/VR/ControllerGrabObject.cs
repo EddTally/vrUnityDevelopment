@@ -40,25 +40,6 @@ public class ControllerGrabObject : MonoBehaviour
     private GameObject collidingObject;
     private GameObject objectInHand;
 
-    /*public void OnTriggerEnter(Collider other)
-    {
-        SetCollidingObject(other);
-    }
-
-    public void OnTriggerStay(Collider other)
-    {
-        SetCollidingObject(other);
-    }*/
-
-    public void OnTriggerExit(Collider other)
-    {
-        if (!collidingObject)
-        {
-            return;
-        }
-
-        collidingObject = null;
-    }
 
     public void SetCollidingObject(Collider col)
     {
@@ -70,26 +51,7 @@ public class ControllerGrabObject : MonoBehaviour
         collidingObject = col.gameObject;
     }
 
-    public void GrabObjectMain()
-    {
-        if (grabAction.GetLastStateDown(handType))
-        {
-            if (collidingObject)
-            {
-                GrabObject();
-            }
-        }
-
-        if (grabAction.GetLastStateUp(handType))
-        {
-            if (objectInHand)
-            {
-                ReleaseObject();
-            }
-        }
-    }
-
-    private void GrabObject()
+    public void Update()
     {
         objectInHand = collidingObject;
         collidingObject = null;
@@ -116,5 +78,10 @@ public class ControllerGrabObject : MonoBehaviour
         }
 
         objectInHand = null;
+    }
+
+    public GameObject getCollidingObject()
+    {
+        return collidingObject;
     }
 }

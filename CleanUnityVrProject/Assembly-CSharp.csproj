@@ -73,6 +73,8 @@
     <Compile Include="Assets\Scripts\VideoSystem\UIController.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\WorldSpaceVideo.cs" />
     <Compile Include="Assets\Scripts\VR\ControllerGrabObject.cs" />
+    <Compile Include="Assets\Scripts\VR\ControllerGrabObjectOfficial.cs" />
+    <Compile Include="Assets\Scripts\VR\DragObjectAttempt1.cs" />
     <Compile Include="Assets\Scripts\VR\LaserRaycast.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
