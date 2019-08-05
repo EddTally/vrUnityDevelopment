@@ -71,9 +71,10 @@
     <Compile Include="Assets\Scripts\VideoSystem\PlayHeadMover.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\PlayPauseScript.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\ScreenSpaceVideo.cs" />
-    <Compile Include="Assets\Scripts\VideoSystem\UIController.cs" />
+    <Compile Include="Assets\Scripts\VideoSystem\VolumeSlider.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\WorldSpaceVideo.cs" />
     <Compile Include="Assets\Scripts\VR\LaserRaycast.cs" />
+    <Compile Include="Assets\Scripts\VR\UIController.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestTrackedCamera.cs" />
