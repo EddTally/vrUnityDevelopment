@@ -12,7 +12,8 @@ public class UIController : MonoBehaviour
 
     public LaserRaycast laserRaycast;
     public GameObject videoUI;
-    public Collider leftVideoCube, rightVideoCube, playCol, ffCol, ffMenu, ff15s, ff30s, ff1m;
+    public Collider leftVideoCube, rightVideoCube, playCol, ffCol, ffMenu, ff15s, ff30s, ff1m, 
+        rewindCol, rewind15s, rewind30s, rewind1m;
 
     //Variables for Delays
     int count = 0;
@@ -54,20 +55,44 @@ public class UIController : MonoBehaviour
                 //If triggerAction and Raycast Collider hits fastforward collider, fastforward
                 if (triggerAction.GetState(handType) && col == ffCol)
                 {
-                    if(videoUI.gameObject.GetComponent<FFmenuScript>().GetHighlightedChoice() == ff15s.gameObject)
+                    if(videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedFFChoice() == ff15s.gameObject)
                     {
-                        ffCol.GetComponent<FastForwardScript>().FF15s();
-                    }else if (videoUI.gameObject.GetComponent<FFmenuScript>().GetHighlightedChoice() == ff30s.gameObject)
+                        ffCol.GetComponent<FFandRewindScript>().FF15s();
+                    }else if (videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedFFChoice() == ff30s.gameObject)
                     {
-                        ffCol.GetComponent<FastForwardScript>().FF30s();
+                        ffCol.GetComponent<FFandRewindScript>().FF30s();
                     }
-                    else if (videoUI.gameObject.GetComponent<FFmenuScript>().GetHighlightedChoice() == ff1m.gameObject)
+                    else if (videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedFFChoice() == ff1m.gameObject)
                     {
-                        ffCol.GetComponent<FastForwardScript>().FF1m();
+                        ffCol.GetComponent<FFandRewindScript>().FF1m();
                     }
-                    else if (videoUI.gameObject.GetComponent<FFmenuScript>().GetHighlightedChoice() == null)
+                    else if (videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedFFChoice() == null)
                     {
-                        ffCol.GetComponent<FastForwardScript>().FF15s();
+                        ffCol.GetComponent<FFandRewindScript>().FF15s();
+                    }
+
+
+                    count = 160;
+                }
+                /* ------------------------------------- Rewind ------------------------------------ */
+                //If triggerAction and Raycast Collider hits fastforward collider, fastforward
+                if (triggerAction.GetState(handType) && col == rewindCol)
+                {
+                    if (videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedRewindChoice() == ff15s.gameObject)
+                    {
+                        ffCol.GetComponent<FFandRewindScript>().Rewind15s();
+                    }
+                    else if (videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedRewindChoice() == ff30s.gameObject)
+                    {
+                        ffCol.GetComponent<FFandRewindScript>().Rewind30s();
+                    }
+                    else if (videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedRewindChoice() == ff1m.gameObject)
+                    {
+                        ffCol.GetComponent<FFandRewindScript>().Rewind1m();
+                    }
+                    else if (videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedRewindChoice() == null)
+                    {
+                        ffCol.GetComponent<FFandRewindScript>().Rewind15s();
                     }
 
 
@@ -77,14 +102,22 @@ public class UIController : MonoBehaviour
                 //If triggerAction and Raycast Collider hits FFmenu collider, show ff15s, ff30s & ff1m gameobjects
                 if (triggerAction.GetState(handType) && col == ffMenu)
                 {
-                    videoUI.gameObject.GetComponent<FFmenuScript>().ShowMenu();
+                    videoUI.gameObject.GetComponent<FFandRewindMenuScript>().ShowMenu();
 
                     count = 160;
                 }
+                //The two if statements below don't have to be kept apart but it makes for easier reading.
                 //If triggerAction hits any of the Fast Forward Menu gameobjects it calls HighlightChoice method.
                 if (triggerAction.GetState(handType) && (col == ff15s || col == ff30s || col == ff1m))
                 {
-                    videoUI.gameObject.GetComponent<FFmenuScript>().HighlightChoice(col.gameObject);
+                    videoUI.gameObject.GetComponent<FFandRewindMenuScript>().HighlightFFChoice(col.gameObject);
+
+                    count = 160;
+                }
+                //If triggerAction hits any of the Rewind Menu gameobjects it calls HighlightChoice method.
+                if (triggerAction.GetState(handType) && (col == rewind15s || col == rewind30s || col == rewind1m))
+                {
+                    videoUI.gameObject.GetComponent<FFandRewindMenuScript>().HighlightRewindChoice(col.gameObject);
 
                     count = 160;
                 }

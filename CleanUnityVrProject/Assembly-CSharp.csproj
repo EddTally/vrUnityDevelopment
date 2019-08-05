@@ -65,8 +65,8 @@
     <Compile Include="Assets\Scripts\Utils\VRInteractiveItem.cs" />
     <Compile Include="Assets\Scripts\Utils\VRTrackingReset.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\DragObject.cs" />
-    <Compile Include="Assets\Scripts\VideoSystem\FastForwardScript.cs" />
-    <Compile Include="Assets\Scripts\VideoSystem\FFmenuScript.cs" />
+    <Compile Include="Assets\Scripts\VideoSystem\FFandRewindMenuScript.cs" />
+    <Compile Include="Assets\Scripts\VideoSystem\FFandRewindScript.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\HideMenuScript.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\PlayHeadMover.cs" />
     <Compile Include="Assets\Scripts\VideoSystem\PlayPauseScript.cs" />
