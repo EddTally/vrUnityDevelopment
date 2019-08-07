@@ -1,0 +1,4 @@
+Increased Box collider size on screens
+Screens detached from camera
+Trigger replaced with click for main functionality
+Size of VR controllers changed
