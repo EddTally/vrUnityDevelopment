@@ -45,7 +45,7 @@ public class UIController : MonoBehaviour
                 }
 
                 /* ----------------------------- PlayPause ---------------------------------- */
-                //If triggerAction from SteamVR and Raycast Collider hits PlayPause collider, Pause/Play
+                //If middleDpadClick from SteamVR and Raycast Collider hits PlayPause collider, Pause/Play
                 if (triggerAction.GetState(handType) && col == playCol)
                 {
                     playCol.GetComponent<PlayPauseScript>().PlayPause();
@@ -54,7 +54,7 @@ public class UIController : MonoBehaviour
                 }
 
                 /* ------------------------------- Fast Forward --------------------------------- */
-                //If triggerAction and Raycast Collider hits fastforward collider, fastforward
+                //If middleDpadClick and Raycast Collider hits fastforward collider, fastforward
                 if (triggerAction.GetState(handType) && col == ffCol)
                 {
                     if(videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedFFChoice() == ff15s.gameObject)
@@ -77,7 +77,7 @@ public class UIController : MonoBehaviour
                     count = 160;
                 }
                 /* ------------------------------------- Rewind ------------------------------------ */
-                //If triggerAction and Raycast Collider hits fastforward collider, fastforward
+                //If middleDpadClick and Raycast Collider hits fastforward collider, fastforward
                 if (triggerAction.GetState(handType) && col == rewindCol)
                 {
                     if (videoUI.gameObject.GetComponent<FFandRewindMenuScript>().GetHighlightedRewindChoice() == ff15s.gameObject)
@@ -101,7 +101,7 @@ public class UIController : MonoBehaviour
                     count = 160;
                 }
 
-                //If triggerAction and Raycast Collider hits FFmenu collider, show ff15s, ff30s & ff1m gameobjects
+                //If middleDpadClick and Raycast Collider hits FFmenu collider, show ff15s, ff30s & ff1m gameobjects
                 if (triggerAction.GetState(handType) && col == ffMenu)
                 {
                     videoUI.GetComponent<FFandRewindMenuScript>().ShowMenu();
@@ -109,14 +109,14 @@ public class UIController : MonoBehaviour
                     count = 160;
                 }
                 //The two if statements below don't have to be kept apart but it makes for easier reading.
-                //If triggerAction hits any of the Fast Forward Menu gameobjects it calls HighlightChoice method.
+                //If middleDpadClick hits any of the Fast Forward Menu gameobjects it calls HighlightChoice method.
                 if (triggerAction.GetState(handType) && (col == ff15s || col == ff30s || col == ff1m))
                 {
                     videoUI.GetComponent<FFandRewindMenuScript>().HighlightFFChoice(col.gameObject);
 
                     count = 160;
                 }
-                //If triggerAction hits any of the Rewind Menu gameobjects it calls HighlightChoice method.
+                //If middleDpadClick hits any of the Rewind Menu gameobjects it calls HighlightChoice method.
                 if (triggerAction.GetState(handType) && (col == rewind15s || col == rewind30s || col == rewind1m))
                 {
                     videoUI.GetComponent<FFandRewindMenuScript>().HighlightRewindChoice(col.gameObject);

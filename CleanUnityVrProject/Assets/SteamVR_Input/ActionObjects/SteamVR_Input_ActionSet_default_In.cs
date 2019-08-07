@@ -34,5 +34,7 @@ namespace Valve.VR
         public Valve.VR.SteamVR_Action_Boolean VolumeDecreaseClick;
         
         public Valve.VR.SteamVR_Action_Boolean VolumeIncreaseClick;
+        
+        public Valve.VR.SteamVR_Action_Boolean MiddleDpadClick;
     }
 }

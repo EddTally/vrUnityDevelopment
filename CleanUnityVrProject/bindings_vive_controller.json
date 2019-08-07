@@ -156,6 +156,9 @@
             },
             {
                "inputs" : {
+                  "center" : {
+                     "output" : "/actions/default/in/middledpadclick"
+                  },
                   "east" : {
                      "output" : "/actions/default/in/volumeincreaseclick"
                   },
@@ -177,6 +180,9 @@
             },
             {
                "inputs" : {
+                  "center" : {
+                     "output" : "/actions/default/in/middledpadclick"
+                  },
                   "east" : {
                      "output" : "/actions/default/in/volumeincreaseclick"
                   },
@@ -251,7 +257,7 @@
    "category" : "steamvr_input",
    "controller_type" : "vive_controller",
    "description" : "Msc VR Project Vive Controller Bindings",
-   "name" : "EddTallentire Msc Project Bindings",
+   "name" : "EddTallentireMscProjectBindings",
    "options" : {
       "mirror_actions" : false,
       "simulated_controller_type" : "none"

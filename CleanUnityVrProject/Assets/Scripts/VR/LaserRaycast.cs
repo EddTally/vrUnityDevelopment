@@ -36,7 +36,7 @@ public class LaserRaycast : MonoBehaviour
 
     // public SteamVR_Input_Sources handType;
     public SteamVR_Behaviour_Pose controllerPose;
-    // public SteamVR_Action_Boolean triggerAction;
+    // public SteamVR_Action_Boolean middleDpadClick;
 
 
     public GameObject laserPrefab; // The laser prefab

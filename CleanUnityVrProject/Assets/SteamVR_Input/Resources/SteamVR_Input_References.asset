@@ -28,6 +28,7 @@ MonoBehaviour:
   - __actions_default_in_MenuHider
   - __actions_default_in_VolumeDecreaseClick
   - __actions_default_in_VolumeIncreaseClick
+  - __actions_default_in_MiddleDpadClick
   - __actions_default_out_Haptic
   - __actions_mixedreality_in_ExternalCamera
   actionObjects:
@@ -40,5 +41,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 58326442552cc4c45804122f9cf5ca0f, type: 2}
   - {fileID: 11400000, guid: fd8f7bca3603074499e36113de7a4ebc, type: 2}
   - {fileID: 11400000, guid: 5db635988c551d345a95ca5065fe9d17, type: 2}
+  - {fileID: 11400000, guid: a7cbeb2f196265647b451a920cf93475, type: 2}
   - {fileID: 11400000, guid: 744e8cca0be8b9b4c91a45f7135ec6b9, type: 2}
   - {fileID: 11400000, guid: eb13610a2d994ba4e871322690ce013a, type: 2}
