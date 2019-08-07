@@ -9,11 +9,13 @@ public class UIController : MonoBehaviour
     public SteamVR_Action_Boolean triggerAction;
     public SteamVR_Action_Boolean grabAction;
     public SteamVR_Action_Boolean menuHiderAction;
+    public SteamVR_Action_Boolean volumeIncreaseAction;
+    public SteamVR_Action_Boolean VolumeDecreaseAction;
 
     public LaserRaycast laserRaycast;
     public GameObject videoUI;
     public Collider leftVideoCube, rightVideoCube, playCol, ffCol, ffMenu, ff15s, ff30s, ff1m, 
-        rewindCol, rewind15s, rewind30s, rewind1m;
+        rewindCol, rewind15s, rewind30s, rewind1m, volumeCol;
 
     //Variables for Delays
     int count = 0;
@@ -102,7 +104,7 @@ public class UIController : MonoBehaviour
                 //If triggerAction and Raycast Collider hits FFmenu collider, show ff15s, ff30s & ff1m gameobjects
                 if (triggerAction.GetState(handType) && col == ffMenu)
                 {
-                    videoUI.gameObject.GetComponent<FFandRewindMenuScript>().ShowMenu();
+                    videoUI.GetComponent<FFandRewindMenuScript>().ShowMenu();
 
                     count = 160;
                 }
@@ -110,23 +112,26 @@ public class UIController : MonoBehaviour
                 //If triggerAction hits any of the Fast Forward Menu gameobjects it calls HighlightChoice method.
                 if (triggerAction.GetState(handType) && (col == ff15s || col == ff30s || col == ff1m))
                 {
-                    videoUI.gameObject.GetComponent<FFandRewindMenuScript>().HighlightFFChoice(col.gameObject);
+                    videoUI.GetComponent<FFandRewindMenuScript>().HighlightFFChoice(col.gameObject);
 
                     count = 160;
                 }
                 //If triggerAction hits any of the Rewind Menu gameobjects it calls HighlightChoice method.
                 if (triggerAction.GetState(handType) && (col == rewind15s || col == rewind30s || col == rewind1m))
                 {
-                    videoUI.gameObject.GetComponent<FFandRewindMenuScript>().HighlightRewindChoice(col.gameObject);
+                    videoUI.GetComponent<FFandRewindMenuScript>().HighlightRewindChoice(col.gameObject);
 
                     count = 160;
                 }
 
 
+                /* --------------------------------- Volume Controls ---------------------------------*/
+                if(triggerAction.GetState(handType) && col == volumeCol)
+                {
+                    videoUI.gameObject.GetComponent<VolumeSliderScript>().HideVolumeSlider();
 
-
-
-
+                    count = 120;
+                }
 
 
                 //Refreshing raycast collider so when raycast is no longer over an object it is null, this is important
@@ -134,7 +139,15 @@ public class UIController : MonoBehaviour
                 this.GetComponent<LaserRaycast>().SetColliderHit(null);
             }
 
-
+            /* ----------------------------------- Volume Controls Cont -----------------------------*/
+            if (volumeIncreaseAction.GetState(handType))
+            {
+                videoUI.GetComponent<VolumeSliderScript>().IncreaseVolume();
+            }
+            if (VolumeDecreaseAction.GetState(handType))
+            {
+                videoUI.GetComponent<VolumeSliderScript>().DecreaseVolume();
+            }
 
             //If menuHiderAction from SteamVR is pressed, hide menu and raycasts until another gameobj is hit
             //Outside the Col != null statement because this doesn't need to interact with a collider to work.

@@ -31,6 +31,10 @@ namespace Valve.VR
         
         public static SteamVR_Action_Boolean @__actions_default_in_MenuHider;
         
+        public static SteamVR_Action_Boolean @__actions_default_in_VolumeDecreaseClick;
+        
+        public static SteamVR_Action_Boolean @__actions_default_in_VolumeIncreaseClick;
+        
         public static SteamVR_Action_Vibration @__actions_default_out_Haptic;
         
         public static SteamVR_Action_Pose @__actions_mixedreality_in_ExternalCamera;
@@ -44,6 +48,8 @@ namespace Valve.VR
             SteamVR_Input.@__actions_default_in_HeadsetOnHead.Initialize();
             SteamVR_Input.@__actions_default_in_TriggerClick.Initialize();
             SteamVR_Input.@__actions_default_in_MenuHider.Initialize();
+            SteamVR_Input.@__actions_default_in_VolumeDecreaseClick.Initialize();
+            SteamVR_Input.@__actions_default_in_VolumeIncreaseClick.Initialize();
             SteamVR_Input.@__actions_default_out_Haptic.Initialize();
             SteamVR_Input.@__actions_mixedreality_in_ExternalCamera.Initialize();
         }
@@ -57,6 +63,8 @@ namespace Valve.VR
             Valve.VR.SteamVR_Input.@__actions_default_in_HeadsetOnHead = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_default_in_HeadsetOnHead")));
             Valve.VR.SteamVR_Input.@__actions_default_in_TriggerClick = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_default_in_TriggerClick")));
             Valve.VR.SteamVR_Input.@__actions_default_in_MenuHider = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_default_in_MenuHider")));
+            Valve.VR.SteamVR_Input.@__actions_default_in_VolumeDecreaseClick = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_default_in_VolumeDecreaseClick")));
+            Valve.VR.SteamVR_Input.@__actions_default_in_VolumeIncreaseClick = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_default_in_VolumeIncreaseClick")));
             Valve.VR.SteamVR_Input.@__actions_default_out_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Input_References.GetAction("__actions_default_out_Haptic")));
             Valve.VR.SteamVR_Input.@__actions_mixedreality_in_ExternalCamera = ((SteamVR_Action_Pose)(SteamVR_Input_References.GetAction("__actions_mixedreality_in_ExternalCamera")));
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
@@ -67,6 +75,8 @@ namespace Valve.VR
                     Valve.VR.SteamVR_Input.@__actions_default_in_HeadsetOnHead,
                     Valve.VR.SteamVR_Input.@__actions_default_in_TriggerClick,
                     Valve.VR.SteamVR_Input.@__actions_default_in_MenuHider,
+                    Valve.VR.SteamVR_Input.@__actions_default_in_VolumeDecreaseClick,
+                    Valve.VR.SteamVR_Input.@__actions_default_in_VolumeIncreaseClick,
                     Valve.VR.SteamVR_Input.@__actions_default_out_Haptic,
                     Valve.VR.SteamVR_Input.@__actions_mixedreality_in_ExternalCamera};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.SteamVR_Action_In[] {
@@ -77,6 +87,8 @@ namespace Valve.VR
                     Valve.VR.SteamVR_Input.@__actions_default_in_HeadsetOnHead,
                     Valve.VR.SteamVR_Input.@__actions_default_in_TriggerClick,
                     Valve.VR.SteamVR_Input.@__actions_default_in_MenuHider,
+                    Valve.VR.SteamVR_Input.@__actions_default_in_VolumeDecreaseClick,
+                    Valve.VR.SteamVR_Input.@__actions_default_in_VolumeIncreaseClick,
                     Valve.VR.SteamVR_Input.@__actions_mixedreality_in_ExternalCamera};
             Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.SteamVR_Action_Out[] {
                     Valve.VR.SteamVR_Input.@__actions_default_out_Haptic};
@@ -89,7 +101,9 @@ namespace Valve.VR
                     Valve.VR.SteamVR_Input.@__actions_default_in_Grab,
                     Valve.VR.SteamVR_Input.@__actions_default_in_HeadsetOnHead,
                     Valve.VR.SteamVR_Input.@__actions_default_in_TriggerClick,
-                    Valve.VR.SteamVR_Input.@__actions_default_in_MenuHider};
+                    Valve.VR.SteamVR_Input.@__actions_default_in_MenuHider,
+                    Valve.VR.SteamVR_Input.@__actions_default_in_VolumeDecreaseClick,
+                    Valve.VR.SteamVR_Input.@__actions_default_in_VolumeIncreaseClick};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[0];
             Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[0];
             Valve.VR.SteamVR_Input.actionsVector3 = new Valve.VR.SteamVR_Action_Vector3[0];
@@ -100,7 +114,9 @@ namespace Valve.VR
                     Valve.VR.SteamVR_Input.@__actions_default_in_Grab,
                     Valve.VR.SteamVR_Input.@__actions_default_in_HeadsetOnHead,
                     Valve.VR.SteamVR_Input.@__actions_default_in_TriggerClick,
-                    Valve.VR.SteamVR_Input.@__actions_default_in_MenuHider};
+                    Valve.VR.SteamVR_Input.@__actions_default_in_MenuHider,
+                    Valve.VR.SteamVR_Input.@__actions_default_in_VolumeDecreaseClick,
+                    Valve.VR.SteamVR_Input.@__actions_default_in_VolumeIncreaseClick};
         }
     }
 }

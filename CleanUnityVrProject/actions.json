@@ -32,6 +32,14 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/VolumeDecreaseClick",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/VolumeIncreaseClick",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },

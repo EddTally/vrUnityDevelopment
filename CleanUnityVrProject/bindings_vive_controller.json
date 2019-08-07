@@ -139,24 +139,6 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/click"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/click"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "click" : {
                      "output" : "/actions/default/in/menuhider"
                   }
                },
@@ -171,6 +153,48 @@
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/default/in/volumeincreaseclick"
+                  },
+                  "north" : {
+                     "output" : "/actions/default/in/volumeincreaseclick"
+                  },
+                  "south" : {
+                     "output" : "/actions/default/in/volumedecreaseclick"
+                  },
+                  "west" : {
+                     "output" : "/actions/default/in/volumedecreaseclick"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/default/in/volumeincreaseclick"
+                  },
+                  "north" : {
+                     "output" : "/actions/default/in/volumeincreaseclick"
+                  },
+                  "south" : {
+                     "output" : "/actions/default/in/volumedecreaseclick"
+                  },
+                  "west" : {
+                     "output" : "/actions/default/in/volumedecreaseclick"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/trackpad"
             }
          ]
       },

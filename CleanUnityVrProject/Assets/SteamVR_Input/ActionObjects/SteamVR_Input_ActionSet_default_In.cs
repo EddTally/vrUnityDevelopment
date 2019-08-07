@@ -30,5 +30,9 @@ namespace Valve.VR
         public Valve.VR.SteamVR_Action_Boolean TriggerClick;
         
         public Valve.VR.SteamVR_Action_Boolean MenuHider;
+        
+        public Valve.VR.SteamVR_Action_Boolean VolumeDecreaseClick;
+        
+        public Valve.VR.SteamVR_Action_Boolean VolumeIncreaseClick;
     }
 }
