@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d10323487cb44348b830bc017eb40b4, type: 3}
+  m_Name: SteamVR_Input_References
+  m_EditorClassIdentifier: 
+  actionSetNames:
+  - _default
+  - mixedreality
+  actionSetObjects:
+  - {fileID: 11400000, guid: 40af40bebfa28884d95c86d12a41ea7b, type: 2}
+  - {fileID: 11400000, guid: 57de21a0746a9ac4ba975e7339f0c3be, type: 2}
+  actionNames:
+  - __actions_default_in_Grab
+  - __actions_default_in_Pose
+  - __actions_default_in_SkeletonLeftHand
+  - __actions_default_in_SkeletonRightHand
+  - __actions_default_in_HeadsetOnHead
+  - __actions_default_in_TriggerClick
+  - __actions_default_in_MenuHider
+  - __actions_default_in_VolumeDecreaseClick
+  - __actions_default_in_VolumeIncreaseClick
+  - __actions_default_in_MiddleDpadClick
+  - __actions_default_out_Haptic
+  - __actions_mixedreality_in_ExternalCamera
+  actionObjects:
+  - {fileID: 11400000, guid: 79120fdb22c0bef4a8243bb82b6295e6, type: 2}
+  - {fileID: 11400000, guid: d97a128ab0bbb3746a0b0e17d0e531f7, type: 2}
+  - {fileID: 11400000, guid: 8d6cdc0533ea3a74e9d2297a81b98c3b, type: 2}
+  - {fileID: 11400000, guid: c0e538af612458e4fa2e52bc75c0ded5, type: 2}
+  - {fileID: 11400000, guid: 668089e66285cd647a23bcc267f98573, type: 2}
+  - {fileID: 11400000, guid: ef36e97f04aef6548921e10a82ac9a8a, type: 2}
+  - {fileID: 11400000, guid: 58326442552cc4c45804122f9cf5ca0f, type: 2}
+  - {fileID: 11400000, guid: fd8f7bca3603074499e36113de7a4ebc, type: 2}
+  - {fileID: 11400000, guid: 5db635988c551d345a95ca5065fe9d17, type: 2}
+  - {fileID: 11400000, guid: a7cbeb2f196265647b451a920cf93475, type: 2}
+  - {fileID: 11400000, guid: 744e8cca0be8b9b4c91a45f7135ec6b9, type: 2}
+  - {fileID: 11400000, guid: eb13610a2d994ba4e871322690ce013a, type: 2}
